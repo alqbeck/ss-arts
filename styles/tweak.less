@@ -5,10 +5,10 @@
 // tweak: { "category" : "General", "title" : "Site Background", "type" : "color", "target" : "body, #canvas" }
 @siteBackground: #fff;
 
-// tweak: { "category" : "General", "title" : "Page Border Color", "type" : "color", "target" : ".collection-type-gallery #pageWrapper, .collection-type-blog #pageWrapper, .collection-type-page #pageWrapper" }
+// tweak: { "category" : "General", "title" : "Page Border Color", "type" : "color", "target" : ".collection-type-gallery #pageWrapper, .collection-type-blog #pageWrapper, .collection-type-page #pageWrapper, .collection-type-stories #pageWrapper" }
 @pageBorderColor: #111;
 
-// tweak: { "category" : "General", "title" : "Page Border Width", "type" : "value", "min" : 0, "max" : 50, "target" : ".collection-type-gallery #pageWrapper, .collection-type-blog #pageWrapper, .collection-type-page #pageWrapper" }
+// tweak: { "category" : "General", "title" : "Page Border Width", "type" : "value", "min" : 0, "max" : 50, "target" : ".collection-type-gallery #pageWrapper, .collection-type-blog #pageWrapper, .collection-type-page #pageWrapper, .collection-type-stories #pageWrapper" }
 @pageBorderWidth: 0px;
 
 // tweak: { "category" : "General", "title" : "Site Width", "type" : "value", "min" : 600, "max" : 1800, "step" : 10, "target" : ".collection-type-blog #page, .collection-type-page #page", "property" : "width" }
@@ -199,6 +199,25 @@
 // tweak: { "category" : "Gallery Styles", "title" : "Gallery Controls", "type" : "dropdown", "options" : [ "None", "Text", "Arrows" ], "showOnlyWhenPresent" : ".collection-type-gallery" }
 
 
+/* STORY STYLES
+---------------------------------------------------*/
+
+// tweak: { "category" : "Stories Styles", "title" : "Stories Background", "type" : "color",   "target" : ".collection-type-stories #pageWrapper", "showOnlyWhenPresent" : ".collection-type-stories" }
+@galleryBackground: #111;
+
+// tweak: { "category" : "Stories Styles", "title" : "Stories Height (Max)", "type" : "value", "min" : 500, "max" : 1000, "target" : ".collection-type-stories #slideshow", "category" : "Stories Styles", "showOnlyWhenPresent" : ".collection-type-stories" }
+@portfolioHeight: 500px;
+
+// tweak: { "category" : "Stories Styles", "title" : "Stories Slide Opacity", "type" : "value", "min" : 0, "max" : 100, "target" : ".collection-type-stories .slide", "category" : "Stories Styles", "showOnlyWhenPresent" : ".collection-type-stories" }
+@slideOpacity: 100;
+
+// tweak: { "category" : "Stories Styles", "title" : "Hide Stories Descriptions", "type" : "checkbox", "default" : "false", "target" : ".collection-type-stories .slide", "showOnlyWhenPresent" : ".collection-type-stories" }
+
+// tweak: { "category" : "Stories Styles", "title" : "Stories Auto Play", "type" : "checkbox", "js": "true", "target" : ".collection-type-stories #slideshow", "showOnlyWhenPresent" : ".collection-type-stories" }
+
+// tweak: { "category" : "Stories Styles", "title" : "Stories Controls", "type" : "dropdown", "options" : [ "None", "Text", "Arrows" ], "showOnlyWhenPresent" : ".collection-type-stories" }
+
+
 /* FOOTER
 ---------------------------------------------------*/
 
@@ -234,4 +253,3 @@
 
 // tweak: { "type" : "color", "title" : "Category Nav Active Color", "target" : ".collection-type-products #pageWrapper, #categoryNav", "category" : "Products", "showOnlyWhenPresent" : ".collection-type-products.show-category-navigation" }
 @categoryNavActiveColor: #000000;
-

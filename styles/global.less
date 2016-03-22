@@ -1,4 +1,4 @@
- 
+
 .auto-border-color (@a) when (lightness(@a) >= 50%) {
   border: 1px solid darken(@siteBackground,10%);
 }
@@ -516,7 +516,7 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
 // Gallery Collections
 
 
-.collection-type-gallery {
+.collection-type-gallery, .collection-type-stories {
 
   #pageWrapper, #page { max-width: none; padding: 0; }
 
@@ -657,7 +657,7 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
   height: @a;
 }
 @media only screen and (max-height: 899px) {
-  .collection-type-gallery #slideshow {
+  .collection-type-gallery #slideshow, .collection-type-stories #slideshow {
     .min-height(600px, @portfolioHeight);
     .slide, .slide img { .min-height(600px, @portfolioHeight); }
   }
