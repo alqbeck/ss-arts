@@ -2,7 +2,7 @@
     <div id="slideshow">
     	{.repeated section items}
         <div class="slide" data-slide-id="{id}" data-slide-url="{urlId}">
-          {.image?}
+          {.main-image?}
             {.if fullUrl}<a href="{fullUrl}">{.end}<img {@|image-meta} data-load="false" />{.if fullUrl}</a>{.end}
             {.if body || title}<div class="image-description">{.section title}<strong>{@}</strong> {.end}{body}</div>{.end}
           {.end}
