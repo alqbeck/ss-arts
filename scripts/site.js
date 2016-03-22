@@ -11,7 +11,9 @@ Y.use('node', 'squarespace-gallery-ng', function(Y) {
     initialize: function() {
       this.setupNavigation();
 
-      if (Y.one('body').hasClass('collection-type-gallery')) {
+	  if (Y.one('body').hasClass('collection-type-stories')) {
+        this.setupGallery();
+	  } else if (Y.one('body').hasClass('collection-type-gallery')) {
         this.setupGallery();
       } else if (Y.one('body').hasClass('collection-type-blog')) {
         this.setupBlog();
