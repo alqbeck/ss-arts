@@ -667,7 +667,7 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
 
 /* make the homepage stories gallery full width */
 body.collection-type-stories {
-	#page { max-width: @siteWidth; }
+	:not(.homepage) #page { max-width: @siteWidth; }
 }
 
 
