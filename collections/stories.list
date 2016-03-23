@@ -4,9 +4,8 @@
         <div class="slide" data-slide-id="{id}" data-slide-url="{urlId}">
           {.main-image?}
             {.if fullUrl}<a href="{fullUrl}">{.end}<img {@|image-meta} data-load="false" />{.if fullUrl}</a>{.end}
-            {.if body || title}<div class="image-description">{.section title}<strong>{@}</strong> {.end}{body}</div>{.end}
+            {.if title}<div class="image-description">{.section title}<strong>{@}</strong>{.end}{excerpt}</div>{.end}
           {.end}
-          {.video?}{@|video load-false}{.end}
         </div>
     	{.end}
     </div>
