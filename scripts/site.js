@@ -138,7 +138,7 @@ Y.use('node', 'squarespace-gallery-ng', function(Y) {
           lazyLoad: true,
           refreshOnResize: true,
           refreshOnOrientationChange: true,
-          historyHash: true
+          historyHash: false
         });
 
       }
