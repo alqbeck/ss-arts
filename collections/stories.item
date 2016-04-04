@@ -12,6 +12,10 @@
   <!--POST HEADER-->
 
   <header>
+    <div class="engagement">
+      {@|like-button}
+      {@|social-button-inline}
+    </div>
     <h1 class="entry-title">
       {.passthrough?}
         <a href="{sourceUrl}">{title} <span>&rarr;</span></a>
@@ -20,7 +24,7 @@
       {.end}
     </h1>
     <div class="entry-info">
-      <span class="published"><a href="{fullUrl}" title="Permalink" class="permalink"><time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a></span>
+<!--      <span class="published"><a href="{fullUrl}" title="Permalink" class="permalink"><time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a></span> -->
       {.if categories} in <span class="category">{.repeated section categories}<a href="{collection.fullUrl}?category={@}" rel="tag">{@}</a>{.alternates with}, {.end}</span>{.end}
     </div>
   </header>
@@ -39,10 +43,6 @@
     <div class="post-item-injection">{postItemInjectCode}</div>
     <div class="entry-info">
       {.section tags}<span class="tags">Tags: {.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}#show-archive" rel="tag">{@}</a>{.alternates with}, {.end}</span>{.end}
-    </div>
-    <div class="engagement">
-      {@|like-button}
-      {@|social-button-inline}
     </div>
   </footer>
 

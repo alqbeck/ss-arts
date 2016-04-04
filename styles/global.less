@@ -32,7 +32,7 @@
 /* COLORS & BACKGROUNDS
 ***********************************************/
 
-body { background: @siteBackground url('/assets/background.jpg') no-repeat 50% 0; color: @bodyTextColor;
+body { background: @siteBackground url('/assets/background.jpg') no-repeat 50% 0; background-attachment: fixed; color: @bodyTextColor;
   a, a:visited { color: @bodyLinkColor; }
   a:hover { color: @bodyLinkHoverColor; }
   .main-nav {
@@ -412,8 +412,14 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
   .post-divider { margin-top: @blogPostSpacing/2; padding-top: @blogPostSpacing/2; }
 }
 
-.engagement { margin-top: 10px; font-size: 0.9em; font-style: italic;
+.engagement { float: right; font-size: 0.9em; font-style: italic;
 
+  .squarespace-social-buttons.inline-style
+    color: #fff;
+    background: #960a2c;
+    padding: 0.5em 1.5em;
+    border-radius: 2px;
+  }
   .squarespace-social-buttons.inline-style:hover .ss-social-button,
   .squarespace-social-buttons .ss-social-list-wrapper .ss-social-button-list {
     text-align: left;
@@ -642,6 +648,12 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
 
   .pagination {
     margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    .prev-item, .next-item {
+      padding: 1em 0;
+    }
     .next-item {
       float:right;
       text-align:right;
