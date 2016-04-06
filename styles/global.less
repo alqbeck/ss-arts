@@ -412,7 +412,11 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
   .post-divider { margin-top: @blogPostSpacing/2; padding-top: @blogPostSpacing/2; }
 }
 
-.engagement { display: inline-block; float: right; font-size: 0.9em; font-style: italic;
+.engagement {
+	display: inline-block;
+	float: right;
+	font-size: 0.9em;
+	font-style: italic;
 
   .squarespace-social-buttons.inline-style {
     color: #fff;
@@ -803,7 +807,13 @@ body.collection-type-stories {
   color: fade(@bodyTextColor, 70%);
 }
 
-
+.summary-title {
+	color: @headingsColor;
+	font-weight: 700;
+}
+.summary-excerpt p {
+	font-style: oblique;
+}
 
 
 /* SUMMARY BLOCK
