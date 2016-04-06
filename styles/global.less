@@ -241,10 +241,11 @@ body.page-alignment-right #page {
 body.page-alignment-right.collection-type-gallery #page { float: none; }
 
 #footer {
-  border-top: 1px solid #96082C;
   #footerBlocks-1 { width: 50%; float: right; }
   #footerBlocks-2 {}
 }
+
+body:not(.homepage) #footer { border-top: 1px solid #96082C; }
 
 .sqs-footer-injection { clear: both; padding: 0 @sitePadding; margin: auto; }
 .constrain-header-width .sqs-footer-injection { max-width: @siteWidth; }
@@ -549,11 +550,11 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
         position: absolute;
         bottom: 5%;
         left: 5%;
-        padding: 30px 20px 15px;
+        padding: 20px 15px;
         background: #111;
         background: rgba(0,0,0,0.6);
         color: #fff;
-        font-size: 32px;
+        font-size: 28px;
         opacity: 1;
 
         // easeOuQuad animation
@@ -568,6 +569,12 @@ body.page-alignment-right.collection-type-gallery #page { float: none; }
         margin-bottom: 0;
         padding-bottom: 0;
       }
+
+      .image-description p {
+		  font-size: 16px;
+		  line-height: 1.4em;
+		  margin: 0.5em 0 1em 0;
+	  }
 
       .image-description p:last-child:empty { display: none; }
 
