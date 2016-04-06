@@ -192,7 +192,8 @@ body {
 
 #header,
 #footer {
-  padding: @headerPadding @sitePadding;
+  padding: @headerPadding 0;
+  margin: 0 @sitePadding;
 }
 
 #pageWrapper {
@@ -240,6 +241,7 @@ body.page-alignment-right #page {
 body.page-alignment-right.collection-type-gallery #page { float: none; }
 
 #footer {
+  border-top: 1px solid #96082C;
   #footerBlocks-1 { width: 50%; float: right; }
   #footerBlocks-2 {}
 }
@@ -812,6 +814,7 @@ body.collection-type-stories {
 	font-weight: 700;
 }
 .summary-excerpt p {
+	font-size: 16px;
 	font-style: oblique;
 }
 
