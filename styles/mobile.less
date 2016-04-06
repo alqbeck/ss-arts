@@ -1,6 +1,13 @@
 
 // MOBILE
 
+@media only screen and (max-width:900px) {
+
+  body:not(.homepage) #mainContent { width: auto !important; margin: 0 20px !important; }
+  body.homepage #mainContent { width: auto !important; margin: 0 !important; }
+
+}
+
 @media only screen and (max-width:800px) {
 
   // collapse sqs layouts
@@ -31,8 +38,6 @@
   }
 
   #page { padding: 0 !important; float: none !important; }
-
-  #mainContent { width: auto !important; margin: 0 !important; }
 
   #canvasWrapper, #galleryWrapper, #slideshowWrapper, #slideshow { overflow: visible !important; }
 
