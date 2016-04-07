@@ -33,6 +33,7 @@
         {@|like-button}
         {@|social-button-inline}
       </div>
+	  <h1>{title}</h1>
 	  {@}</div>{.end}
 	{.passthrough?}{.or}{.section sourceUrl}<div class="entry-source">Source: <a href="{sourceUrl}" target="_blank">{sourceUrl|truncate 42}</a></div>{.end}{.end}
 
