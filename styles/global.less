@@ -108,7 +108,8 @@ nav ol {
   nav { position: relative; bottom: @navAlignment - 25; margin-top: 0; float: left;
     ul { float: left; }
     li { float: left; position: relative; }
-    li a { line-height: @navSize*2;  display: inline-block; text-decoration: underline; }
+    li a { line-height: @navSize*2;  display: inline-block; }
+	li a:hover { text-decoration: underline; }
     li + li { margin-left: @navPadding; }
 
     // dropdown menus
@@ -570,8 +571,14 @@ body:not(.homepage) #footer { border-top: 1px solid #96082C; }
         padding-bottom: 0;
       }
 
+      .image-description strong {
+		font-weight: 400;
+		text-transform: uppercase;
+	  }
+
       .image-description p {
 		  font-size: 16px;
+		  font-style: oblique;
 		  line-height: 1.4em;
 		  margin: 0.5em 0 1em 0;
 	  }
